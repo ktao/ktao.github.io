@@ -33,7 +33,7 @@
 	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-	
+
     <!-- Google Analytics Tracking Code
     ================================================== -->
 	<script>
@@ -53,7 +53,7 @@
 	================================================== -->
 
   <div class="container">
-    
+
     <!-- Sidebar -->
     <div class="three columns sidebar">
       <nav>
@@ -67,26 +67,27 @@
         <li><a href="#summary">Summary</a></li>
 		<li><a href="#thesis">Thesis</li>
 		<li><a href="#datasets">Datasets</li>
+		<li><a href="#platform">Platform</li>
 		<li><a href="#demo">Demonstation</li>
 		<li><a href="#tag">Tag Clouds</li>
         <li><a href="#contact">Contact</a></li>
         <li>&nbsp;</li>
       </ul></nav>
     </div>
-    
+
     <!-- Content -->
     <div class="twelve columns offset-by-four content">
         <div class="doc-section" id="about">
             <h3>About</h3>
             <p>This site provides supplemental material and information about my PhD thesis entitled "Social Web Data Analytics: Relevancy, Redundancy, Diversity". I am currently writing and improving this thesis at Web Information Systems group, Delft University of Technology, the Netherlands, where I have been supervised by <a href="http://www.wis.ewi.tudelft.nl/houben/" target="_blank">prof. dr. ir. Geert-Jan Houben</a>.</p>
         </div>
-        
+
         <hr />
         <div class="doc-section" id="publications">
             <h3>Publications</h3>
             <p>The works in this thesis have been published in different venues relevant to the research area of information systems. The detailed list can be found at <a href="http://ktao.nl/#publications" target="_blank">my homepage</a>.</p>
         </div>
-        
+
         <hr />
         <div class="doc-section" id="summary">
             <h3>Summary</h3>
@@ -95,62 +96,73 @@
 			<p>Taken search on Twitter as a general case for research, we bring forward the question that, how can we better understand the meaning of information needs from users and hence fulfill them with more suitable results? In particular, we aim to achieve higher relevancy, less redundancy, and with deeper understanding on diversity. With hypotheses made after studying sample search results, we make use of machine learning algorithms in order to validate them with standard, representative dataset. Extensive evaluation results show that our findings improve the retrieval effectiveness significantly. Finally, we put these analytic results into practice and create a prototype search engine for Twitter, which is called Twinder, to demonstrate the applicability of these findings.</p>
 			<p>Inspired by real-life cases, we focus on the information need from public and semi-public sectors during emergency or potentially dangerous circumstances and provide information support using semantic-based faceted search powered by our analytic platform. The application and the evaluation results show the validity of our analytic platforms as well as the effectiveness of exploiting semantics to meet their requirement for intelligence.</p>
         </div>
-        
-        
+
+
         <hr />
         <div class="doc-section" id="thesis">
 			<h3>Thesis</h3>
             <p>I'm preparing the draft...</p>
         </div>
-        
-        
+
+
         <hr />
         <div class="doc-section" id="datasets">
             <h3>Datasets</h3>
 			<p>We try our best to make the dataset that have been mentioned in the thesis publicly available for reproducing the results as well as enabling others to improve our methods.</p>
             <ol>
-                
+
                 <li>
 					<strong>Relevance Estimation</strong><br />
 					<a href="http://wis.ewi.tudelft.nl/twinder/" target="_blank">Dataset</a> published on the supporting website for the paper entitled "Twinder: A Search Engine for Twitter Streams".
                 </li>
-                
+
                 <li>
                 	<strong>Redundancy</strong><br/>
                 	<a href="http://wis.ewi.tudelft.nl/duptweet/" target="_blank">Dataset</a> published on the supporting website for the paper entitled "Groundhog Day: Near Duplicate Detection on Twitter".
                 </li>
-                
-                
+
+
                 <li>
                 	<strong>Diversity</strong><br/>
                 	<a href="http://wis.ewi.tudelft.nl/airs2013/" target="_blank">Dataset</a> published on the supporting website for the paper entitled "Building a Microblog Corpus for Search Result Diversification".
                 </li>
             </ol>
         </div>
-        
+
+		<hr />
+			<div class="doc-section" id="platform">
+			<h3>Platform</h3>
+						<li>
+				<strong>Twitter Analytical Platform</strong><br />
+				<p>We present TAP, which stands for Twitter Analytical Platform, to accomodate the research / the task of Social Web data analytics. It can also be used by other researchers and developers to customize their own analytical tasks. The figure below shows the general architecture of TAP.</p>
+				<p><img src="images/tap-architecture.png" /></p>
+						</li>
+			</div>
+
+
 		<hr />
 	    <div class="doc-section" id="demo">
 			<h3>Demonstration</h3>
 			<p>In order to put our research into practice, we present two demonstrations that is supported by Twitter Analytic Platfrom, which is instroduced in this thesis.</p>
-			
+
             <li>
 				<strong>Twinder</strong><br />
 				<p>Given the motivation of fulfilling the information needs of users with Social Web data, we make use of our platform to investigate several fundamental problems in the context of information retrieval on Twitter. Therefore, we present Twinder (<strong>Twi</strong>tter Fi<strong>nder</strong>), which is a search engine for Twitter streams. By applying the standard query likelihood based language modeling setup, we started from a prototype system that can retrieve tweets with keyword queries. Increasingly, we put our findings, which have been concluded from studying the problems of relevance estimation (Chapter 3), near-duplicate detection (Chapter 4), and search result diversification (Chapter 5), into practice so that the retrieval effectiveness of Twinder gets improved in terms of the corresponding measures. A screenshot of Twinder is shown below. The running demonstration will be setup up soon.</p>
-				<p><img src="images/twinder-screenshot.png" /></p>	
+				<p><img src="images/twinder-screenshot.png" /></p>
             </li>
-			
+
             <li>
 				<strong>Twitcident</strong><br />
 				<p><a href="http://twitcident.org/" target="_blank">Twitcident.org</a> is a collaboration of Delft University of Technology, Netherlands Organisation for Applied Scientific Research TNO and CrowdSense that aims to support public safety with Web mining technology. In Delft, we focus on the core technologies that enable Twitcident to deliver the results of good quality. In particular, Twitter Analytic Platform provides the toolkits that Twitcident can rely on for conducting Social Web data analytics in Twitter Analysis Language. The outcomes can be further rendered for various applications, e.g., faceted search and visualization. A demonstration can be found at <a href="http://wis.ewi.tudelft.nl/twitcident/" target="_blank">http://wis.ewi.tudelft.nl/twitcident/</a>.</p>
             </li>
 	    </div>
-		
+
 		<hr />
 	    <div class="doc-section" id="tag">
 			<h3>Tag Cloud</h3>
 	        <p><img src="images/tag-cloud.png" /></p>
 	    </div>
-		
+
         <hr />
         <div class="doc-section" id="contact">
             <h3>Contact</h3>
@@ -158,11 +170,11 @@
 			<a href="http://ktao.nl/">http://ktao.nl</a></p>
         </div>
     </div><!-- Content -->
-	
+
     <footer class="eleven center-column">
         <hr class="large"/><p>The Webpage is built on <a href="http://www.getskeleton.com/" target="_blank">Skeleton</a> by Ke Tao.</p>
     </footer>
-    
+
   </div><!-- container -->
 
 
